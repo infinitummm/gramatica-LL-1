@@ -1,0 +1,56 @@
+# ==============================================================================
+# Bateria de Pruebas Exitosas para la Gramatica LL(1)
+# Integrantes: Dylan Torres, Juan Gomez, Javier Rosero
+# ==============================================================================
+
+# 1. Operaciones aritmeticas basicas con precedencia y asociatividad
+resultado_aritmetico = 10 + 20 * 3 - 15 / 3;
+print(resultado_aritmetico);
+
+# 2. Operacion modulo y negativos
+mod_res = 29 % 7;
+neg_val = -15 + 5;
+print(mod_res);
+print(neg_val);
+
+# 3. Funcion abs (valor absoluto) con expresiones anidadas
+valor_abs = abs(-99.45);
+abs_compuesto = abs(10 - 25);
+print(valor_abs);
+print(abs_compuesto);
+
+# 4. Funciones trigonometricas: sin, cos, tan
+val_cero = 0;
+seno_cero = sin(val_cero);
+cos_cero = cos(val_cero);
+tan_cero = tan(val_cero);
+print(seno_cero);
+print(cos_cero);
+print(tan_cero);
+
+# 5. Trigonometria con constantes y formulas fisicas/geometricas
+pi = 3.141592653589793;
+seno_90 = sin(pi / 2);
+cos_180 = cos(pi);
+tan_45 = tan(pi / 4);
+print(seno_90);
+print(cos_180);
+print(tan_45);
+
+# 6. Asignaciones encadenadas y reutilizacion de variables
+base = 12.5;
+altura = 8.0;
+area_triangulo = (base * altura) / 2;
+print(area_triangulo);
+
+# 7. Expresiones complejas combinando todas las caracteristicas
+calculo_integral = abs(sin(pi / 6) * 100 - cos(0) * 50) + (100 % 30);
+print(calculo_integral);
+
+# 8. Raiz cuadrada con sqrt y raiz (casos exactos y compuestos)
+raiz_exacta = sqrt(144);
+raiz_compuesta = raiz(25 + 75);
+raiz_pitagoras = sqrt(3 * 3 + 4 * 4);
+print(raiz_exacta);
+print(raiz_compuesta);
+print(raiz_pitagoras);

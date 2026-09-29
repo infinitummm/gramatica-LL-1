@@ -1,0 +1,27 @@
+# ==============================================================================
+# Bateria de Casos de Error (Lexicos, Sintacticos y Semanticos)
+# Demostracion de captura de diagnosticos y modo panico
+# Integrantes: Dylan Torres, Juan Gomez, Javier Rosero
+# ==============================================================================
+
+# Error lexico: caracter no perteneciente al alfabeto del lenguaje
+caracter_invalido = 50 @ 10;
+
+# Error sintactico: falta de punto y coma delimitador
+falta_punto_coma = 10 + 20
+
+# Error sintactico: operadores binarios yuxtapuestos
+operador_duplicado = 15 + * 3;
+
+# Error semantico: uso de identificador no inicializado
+variable_existente = 10;
+variable_con_error = variable_inexistente + 5;
+
+# Error semantico: division por cero en tiempo de evaluacion
+division_nula = 100 / 0;
+
+# Error semantico: operacion de residuo por cero
+modulo_nulo = 50 % 0;
+
+# Error semantico: raiz cuadrada de un numero negativo
+raiz_negativa = sqrt(-25);

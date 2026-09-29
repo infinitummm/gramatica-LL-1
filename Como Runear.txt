@@ -1,0 +1,29 @@
+Guia de Ejecucion - Compilador y Gramatica LL(1)
+Integrantes: Dylan Torres, Juan Gomez, Javier Rosero
+
+Requisitos:
+- Python 3.10 o superior instalado en el sistema.
+
+Opciones de ejecucion:
+
+Con Makefile:
+- Para calcular los conjuntos LL(1), mostrar la tabla M[A, a] y correr las pruebas:
+  make
+- Para visualizar unicamente los conjuntos PRIMEROS, SIGUIENTES, PREDICCION y la tabla:
+  make conjuntos
+- Para ejecutar las baterias de prueba (casos validos y captura de errores):
+  make test
+- Para visualizar los Arboles de Sintaxis Abstracta (AST) de casos de exito y fracaso:
+  make arbol
+- Para abrir la consola interactiva (REPL):
+  make interactivo
+- Para limpiar archivos temporales:
+  make clean
+
+Con ejecucion directa de Python:
+- python3 main.py --conjuntos
+- python3 main.py --pruebas
+- python3 main.py --arbol
+- python3 main.py --interactivo
+
+
